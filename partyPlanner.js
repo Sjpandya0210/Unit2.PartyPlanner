@@ -1,4 +1,6 @@
-const API_URL = `https://fsa-crud-2aa9294fe819.herokuapp.com/api/2310-fsa-et-web-pt-sf-b/events`
+const COHORT = "REPLACE_ME!";
+const API_URL= `https://fsa-crud-2aa9294fe819.herokuapp.com/api/2310-fsa-et-web-pt-sf-b/events`
+console.log(API_URL);
 
 const state = {
     parties: [],
@@ -23,7 +25,7 @@ async function getParties() {
     try {
       const response = await fetch(API_URL);
       const jsonResponse = await response.json();
-      //console.log(jsonResponse); //to check what we have
+      console.log(jsonResponse); //to check what we have
       const parties = jsonResponse.data;
       state.parties = parties;
       console.log('Parties:', state) //to test that its working
