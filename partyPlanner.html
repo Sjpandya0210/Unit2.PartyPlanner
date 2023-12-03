@@ -12,28 +12,24 @@
     <form id="addParty">
       <label>
         Name
-        <input type="text" name="name" />
+        <input type="text" name="name" id="name" />
       </label>
       <label>
         Date
-        <input type="date" name="date"/>
-      </label>
-      <label>
-        Time
-        <input type="time" id="appt" name="appt" min="09:00" max="19:00" required />
+        <input type="datetime-local" name="date" id="date"/>
       </label>
       <label>
         Location
-        <input type="text" name="location" />
+        <input type="text" name="location" id="location" />
       </label>
       <label>
        Description
-        <input type="text" name="description" />
+        <input type="text" name="description" id="description"/>
       </label>
-      <button>Add Party</button>
+      <input type="submit" value="Submit" id="submit-button">
     </form>
-    <ul id="parties">
-        
-    </ul>
+    <ul id="parties"></ul>
+    <!---events or parties go here-->
+    
 </body>
 </html>

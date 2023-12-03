@@ -15,7 +15,7 @@ ul {
     overflow: auto;
   }
   
-  button {
+ #submit {
     max-width: 100px;
     max-height: 100px;
     margin: 10px;
